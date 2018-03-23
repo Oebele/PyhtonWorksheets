@@ -1,9 +1,9 @@
 {
-    "name": "open-editor-and-add-extension",
-    "displayName": "Open Editor And Add extension",
+    "name": "python3-worksheet-for-vscode",
+    "displayName": "Python 3 worksheet for vscode",
     "description": "",
     "version": "0.0.1",
-    "publisher": "hello",
+    "publisher": "Oebele Ishopsakee",
     "engines": {
         "vscode": "^1.20.0"
     },
