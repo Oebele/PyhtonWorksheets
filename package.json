@@ -1,0 +1,44 @@
+{
+    "name": "open-editor-and-add-extension",
+    "displayName": "Open Editor And Add extension",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "hello",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.pythonWorkSheet"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.pythonWorkSheet",
+                "title": "Python worksheet"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "child_process": "^1.0.2",
+        "http2": "^3.3.7",
+        "path": "^0.12.7",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    },
+    "dependencies": {
+        "tslint": "^5.9.1"
+    }
+}
